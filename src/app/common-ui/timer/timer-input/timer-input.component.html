@@ -1,0 +1,4 @@
+<div class="timer-input">
+    <label for="input">Select Time:</label>
+    <input class="input" type="time" step="2" min="00:00:00" max="99:59:59" required [(ngModel)]="selectedTime" (change)="onTimeChange($event)">
+</div>

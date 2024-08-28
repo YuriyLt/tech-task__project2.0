@@ -29,10 +29,10 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 1.625rem;
+    width: 1.625rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
     background-color: var(--main-text-color);
     -webkit-transition: .4s;
     transition: .4s;
@@ -53,7 +53,7 @@
   }
 
   .slider.round {
-    border-radius: 34px;
+    border-radius: 2.125rem;
   }
   
   .slider.round:before {

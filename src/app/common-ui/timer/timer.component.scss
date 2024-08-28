@@ -1,0 +1,50 @@
+.center {
+    display: grid;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    width: 32rem;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 0.25rem solid;
+    border-color: var(--comment-color);
+    color: var(--main-text-color);
+}
+
+.timer {
+    font-size: 5rem;
+    opacity: 0.85;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+}
+
+.controls-startBtn, 
+.controls-stopBtn, 
+.controls-resetBtn {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--comment-color);
+    border: 0.15rem solid;
+    border-color: var(--secondary-color);
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+}
+

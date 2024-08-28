@@ -1,0 +1,27 @@
+.timer-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+    color: var(--main-text-color);
+}
+
+input[type="time"] {
+  width: 15rem;
+  height: 3rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+  color: var(--main-text-color);
+  background-color: var(--comment-color);
+  border: 1px solid var(--comment-color);
+  border-radius: 0.3rem;
+}
+
+.input {
+    background-color: var(--gray-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    outline: none;
+}

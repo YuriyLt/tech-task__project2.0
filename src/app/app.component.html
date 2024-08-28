@@ -2,9 +2,14 @@
     <h1 class="h1">Timee</h1>
     <div class="switch-container">
         <span class="span">TIMER</span>
-        <app-switch-button class="switch-container__button"></app-switch-button>
+        <app-switch-button class="switch-container__button" (modeChange)="handleModeChange($event)"></app-switch-button>
         <span class="span">STOPWATCH</span>
     </div>
-    <app-timer class="timer"></app-timer>
-    <app-stopwatch class="stopwatch"></app-stopwatch>
+    
+    <div *ngIf="isStopwatchMode">
+        <app-stopwatch class="stopwatch"></app-stopwatch>
+    </div>
+    <div *ngIf="!isStopwatchMode">
+        <app-timer class="timer"></app-timer>
+    </div>
 </body>

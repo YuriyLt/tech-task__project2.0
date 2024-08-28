@@ -1,4 +1,4 @@
 <label class="switch">
-    <input type="checkbox">
+    <input type="checkbox" [(ngModel)]="isStopwatchMode" (change)="onModeChange()" class="switch-button" />
     <span class="slider round"></span>
 </label>

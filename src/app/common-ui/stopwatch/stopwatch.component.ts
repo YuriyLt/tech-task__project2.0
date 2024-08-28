@@ -1,12 +1,16 @@
 import { CssSelector, LetDeclaration } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { ValueChangeEvent } from '@angular/forms';
+import { SwitchButtonComponent } from '../switch-button/switch-button.component';
+import { AppComponent } from '../../app.component';
+import { CommonModule } from '@angular/common';
+import { TimerComponent } from '../timer/timer.component';
 
 
 @Component({
   selector: 'app-stopwatch',
   standalone: true,
-  imports: [],
+  imports: [SwitchButtonComponent, AppComponent, CommonModule, TimerComponent],
   templateUrl: './stopwatch.component.html',
   styleUrl: './stopwatch.component.scss'
 })

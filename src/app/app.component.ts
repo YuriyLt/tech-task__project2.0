@@ -5,21 +5,28 @@ import { TimerComponent } from './common-ui/timer/timer.component';
 import { SwitchButtonComponent } from './common-ui/switch-button/switch-button.component';
 import { TimerInputComponent } from './common-ui/timer/timer-input/timer-input.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, StopwatchComponent, TimerComponent, SwitchButtonComponent, TimerInputComponent],
+  imports: [FormsModule, CommonModule, RouterOutlet, StopwatchComponent, TimerComponent, SwitchButtonComponent, TimerInputComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
 export class AppComponent {
   title = 'tech-task__project';
 
   isStopwatchMode: boolean = false;
+  
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
+
+  handleModeChange(mode: boolean) {
+    this.isStopwatchMode = mode;
+  }
 
   toggleMode(event: Event): void {
     const inputElement = event.target as HTMLInputElement;

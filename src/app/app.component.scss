@@ -29,7 +29,7 @@
 .switch-container span:nth-child(1) {
     display: grid;
     justify-content: end;
-    color: var(--gray-color);
+    color: var(--main-text-color);
 }
 
 .switch-container.switch-container__button {
@@ -40,5 +40,5 @@
 
 .stopwatch {
     margin-top: 4vh;
-    margin-bottom: 250vh; 
+    margin-bottom: 25vh; 
 }

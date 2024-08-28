@@ -15,13 +15,40 @@ input[type="time"] {
   font-size: 1rem;
   color: var(--main-text-color);
   background-color: var(--comment-color);
-  border: 1px solid var(--comment-color);
+  border: 1px solid var(--dark-color);
   border-radius: 0.3rem;
 }
 
 .input {
-    background-color: var(--gray-color);
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
-    outline: none;
+  background-color: var(--gray-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  outline: none;
+}
+
+.timer-unit {
+  font-size: 5rem;
+  color: var(--main-text-color);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.colon {
+  font-size: 5rem;
+  opacity: 0.85;
+  color: var(--main-text-color);
+  animation: blink 1s infinite;
+}
+
+.innerTimer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  width: 32rem;
+  height: 10rem;
+  border-radius: 1rem;
+  border: 0.25rem solid;
+  border-color: var(--comment-color);
+  color: var(--main-text-color);
 }

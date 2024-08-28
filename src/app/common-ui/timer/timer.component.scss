@@ -1,6 +1,7 @@
 .center {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-container {
@@ -10,16 +11,16 @@
 }
 
 .timer-container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4vh;
-    width: 32rem;
-    height: 10rem;
-    border-radius: 1rem;
-    border: 0.25rem solid;
-    border-color: var(--comment-color);
-    color: var(--main-text-color);
+    // display: grid;
+    // justify-content: center;
+    // align-items: center;
+    // margin-top: 4vh;
+    // width: 32rem;
+    // height: 10rem;
+    // border-radius: 1rem;
+    // border: 0.25rem solid;
+    // border-color: var(--comment-color);
+    // color: var(--main-text-color);
 }
 
 .timer {
@@ -31,8 +32,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 20rem;
     margin-top: 4vh;
     margin-bottom: 10vh;
+}
+
+.controls-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
 }
 
 .controls-startBtn, 
@@ -47,4 +57,3 @@
     font-size: 1.5rem;
     color: var(--main-text-color);
 }
-

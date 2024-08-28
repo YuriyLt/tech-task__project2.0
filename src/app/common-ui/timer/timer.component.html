@@ -1,7 +1,16 @@
 <div class="main-container center">
-    <app-timer-input (timeSelected)="onTimeSelected($event)"></app-timer-input>
-    <div class="timer-container center">
-        <div class="timer center">00:00:00</div>
+    <div class="controls-center">
+        <app-timer-input (timeSelected)="onTimeSelected($event)"></app-timer-input>
+        <div class="timer-container center">
+            <div class="timer center">
+                <div class="innerTimer">
+                    <div class="timer-unit">{{ hrs }}</div>
+                    <div class="colon">:</div>
+                    <div class="timer-unit">{{ mins }}</div>
+                    <div class="colon">:</div>
+                    <div class="timer-unit">{{ secs }}</div>
+            </div>
+        </div>
     </div>
     <div class="controls center">
         <button class="controls-startBtn" (click)="startTimer()">Start</button>

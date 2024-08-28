@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrl: './switch-button.component.scss'
 })
 export class SwitchButtonComponent {
-
 }

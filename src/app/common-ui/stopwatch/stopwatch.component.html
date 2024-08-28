@@ -1,11 +1,10 @@
-<h1 class="logo">Stopwatch</h1>
-        <div class="stopwatch">
-            <div>
-                <span class="stopwatchDisplay">{{title}}</span>
-            </div>
-        <div class="controls">
-            <button class="controls-startBtn" (click)="start()">Start</button>
-            <button class="controls-stopBtn" (click)="stop()">Stop</button>
-            <button class="controls-resetBtn" (click)="reset()">Reset</button>
-        </div>
+<div class="stopwatch">
+    <div class="stopwatch-container">
+        <span class="stopwatch-container__display">{{title}}</span>
     </div>
+    <div class="controls">
+        <button class="controls-startBtn" (click)="start()">Start</button>
+        <button class="controls-stopBtn" (click)="stop()">Stop</button>
+        <button class="controls-resetBtn" (click)="reset()">Reset</button>
+    </div>
+</div>

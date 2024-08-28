@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(/src/app/app.component.scss);
+@import url(/src/app/common-ui/stopwatch/stopwatch.component.scss);
+
+html {
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(1,1,1);
+    background: linear-gradient(50deg, rgba(1,1,1,1) 0%, rgba(175,147,215,1) 32%, rgba(53,22,110,1) 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-color: #6834D4;
+    --secondary-color: #35166e;
+    --accent-color: #32c563;
+    --dark-color: #010101;
+    --main-text-color: #FEFEFE;
+    --comment-color: #af93d7;
+    --gray-color: #787878;
+}
